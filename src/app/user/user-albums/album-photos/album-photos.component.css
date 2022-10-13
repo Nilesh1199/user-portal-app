@@ -1,0 +1,33 @@
+h1{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: floralwhite;
+}
+h3{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: crimson;
+   
+}
+.title{
+    background-color: rgb(15, 131, 131);
+}
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.photos{
+    margin-top: 50px;
+    
+}
+.row{
+    padding: 5px;
+}
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;  
+}

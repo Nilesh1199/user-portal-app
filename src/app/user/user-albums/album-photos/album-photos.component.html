@@ -1,0 +1,44 @@
+<div class="container-fluid">
+    <div class="title">
+        <div class="row">
+            
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1">
+                
+                <h1>
+                    <button type="button" class="btn btn-default btn-md " (click)='backClicked()'>
+                        <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> 
+                    </button>
+                </h1>
+            </div>
+            
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <h1>User Albums</h1> 
+            </div>   
+        </div>
+    </div>
+    <div>
+        <h3>{{title.title}}</h3>
+    </div>
+    
+    <div class="container photos">
+            
+            <div *ngFor="let photo of photoList; let i = index"  >
+                <div  class="row">
+                <div *ngIf="i % 4 == 0" class="col-sm-3 col-xs-3">
+                  <img class="view overlay zoom" src={{photo.url}} alt={{photo.url}}>
+                </div>
+                <div *ngIf=" i%4==0 && i + 1 < photoList.length" class="col-sm-3 col-xs-3">
+                    <img src={{photoList[i+1].url}} alt={{photo.url}}>
+                </div>
+                <div div *ngIf=" i%4==0 && i + 2 < photoList.length" class="col-sm-3 col-xs-3">
+                    <img src={{photoList[i+2].url}} alt={{photo.url}}>
+                </div>
+                <div div *ngIf=" i%4==0 && i + 3 < photoList.length" class="col-sm-3 col-xs-3   ">
+                    <img src={{photoList[i+3].url}} alt={{photo.url}}>
+                </div>
+              </div>
+            </div>
+    </div>
+    
+</div>
+

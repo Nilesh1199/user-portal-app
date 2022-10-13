@@ -1,0 +1,35 @@
+h1{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: floralwhite;
+}
+.title{
+    background-color: rgb(15, 131, 131);
+}
+.content{
+    margin-top: 50px;
+        
+}
+.card{
+        margin: 5px;
+        border-width: 2px;
+        border-style: solid;
+        color: darkgrey;
+        border-radius: 5px;
+        height: 250px;
+        
+}
+img{
+    padding-top: 5px;
+}
+h3{
+    margin: 5px;
+ background-color: rgb(165, 228, 165);
+ color: white;
+ border-radius: 5px;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}

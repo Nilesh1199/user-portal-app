@@ -1,0 +1,62 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: floralwhite;
+}
+
+.title{
+   background-color: rgb(15, 131, 131); 
+   /* background-image: -webkit-image-set(); */
+}
+
+.name{
+    font-size: xx-large;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.data{
+    
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+     
+    font-size: large;
+   
+    box-shadow: tan;
+    border-radius: 3px
+    
+}
+
+table{
+    border: tan;
+    border-style:solid;
+    border: darkslategray;
+    border-width: 2px;
+    background-color: lightyellow;
+}
+th{
+    width: 50%;
+}
+.bt{
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.avatar{
+    margin-top: 10px;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.btn-success{
+    width: 100%;
+    background-color: teal;
+}
+.container{
+  background-color: #F6F6F2;
+    
+}

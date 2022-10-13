@@ -1,0 +1,53 @@
+
+    <div class="title">
+        <div class="row">
+            
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1">
+                
+                <h1>
+                    <button type="button" class="btn btn-default btn-md " (click)='backClicked()'>
+                        <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> 
+                    </button>
+                </h1>
+            </div>
+            
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <h1>User Todo's</h1> 
+            </div>   
+        </div>
+    </div>
+    
+    <div style="background-color: #F6F6F2;">
+        <div class="container cont" >
+        
+            <header class="header">
+              <h2 style="text-align: center;">Todos</h2>
+              <!-- <input class="new-todo" placeholder="What needs to be done?"  (keyup.enter)="addTodo()"> -->
+            </header>
+            <div  *ngFor ="let todo of todos">
+                <div class="todo">
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                        <!-- <p>checkbox</p> -->
+                        <div  *ngIf="todo.completed; else elseBlock"><span class="glyphicon glyphicon-ok" style="color: green;" aria-hidden="true"></span></div>
+                        <ng-template #elseBlock><span class="glyphicon glyphicon-remove " style="color: red;" aria-hidden="true"></span></ng-template>
+                        
+                        <!-- <input class="toggle" type="checkbox" [checked]=todo.completed> -->
+                    </div>
+                    
+                    <div class="col-md-10 col-sm-10 col-md-10 col-lg-10">
+                        <label>{{todo.title}} </label>
+                    </div>
+                </div>
+                
+                
+                <!-- <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <p>delete</p> 
+                    <button class="destroy" > delete</button>
+                </div> -->
+            </div>
+            
+        
+    </div>
+    </div>
+    
+    

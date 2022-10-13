@@ -1,0 +1,98 @@
+<div class="title">
+        <div class="row">
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1">  
+                <h1>
+                    <button type="button" class="btn btn-default btn-md " (click)='backClicked()'>
+                        <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> 
+                    </button>
+                </h1>
+            </div>
+            
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <h1>User Details</h1> 
+            </div>   
+        </div>
+</div>
+<div class="container">
+    <div class=" text-center avatar">
+        <img src="../../../assets/programmer.png" class="img-responsive img-circle margin" style="display:inline" alt="Avatar" width="150" height="150">
+    </div>
+    
+    <div class="text-center name">
+        {{user.name}}
+    </div>
+    <div class="data">
+        <table class="table table-responsive-md">
+        
+            <tbody>
+                <!-- <tr>
+                    <th>First Name :</th> 
+                    <td>{{user.email}}</td>
+                </tr>
+                <tr>
+                    <th>Last Name :</th> 
+                    <td>{{user.email}}</td>
+                </tr> -->
+                <tr>
+                    <th>Username :</th> 
+                    <td>{{user.username}}</td>
+                </tr>
+                <tr>
+                    <th>Email :</th> 
+                    <td>{{user.email}}</td>
+                </tr>
+                <tr>
+                    <th>Address :</th> 
+                    <td> {{user.address.street}},{{user.address.suite}},{{user.address.city}},{{user.address.zipcode}}</td>
+                </tr>
+                <tr>
+                    <th>Phone :</th> 
+                    <td> {{user.phone}}</td>
+                </tr>
+                <tr>
+                    <th>Website :</th> 
+                    <td> {{user.website}}</td>
+                </tr>
+                <tr>
+                    <th>Copmany :</th> 
+                    <td> {{user.company.name}}</td>
+                </tr>
+            </tbody>
+        </table>
+       
+    </div>
+    <div class="bt">
+        <div class="col-xs-4 col-md-4 text-left mt-3">
+            <div class="posts">
+              <button type="button" class="btn btn-success btn-lg btn-resposive" [routerLink]="['posts']" >
+                My Posts
+              </button>
+            </div>
+        </div>
+        <div class="col-xs-4 col-md-4 text-center">
+            <div class="todos">
+              <button type="button" class="btn btn-success btn-lg" [routerLink]="['todos']">
+                My Todo's
+              </button>
+            </div>
+        </div>
+        <div class="col-xs-4 col-md-4 text-right">   
+            <div class="albums">
+              <button type="button" class="btn btn-success btn-lg" [routerLink]="['albums']">
+                My Albums
+              </button>
+            </div>
+        </div> 
+    </div>
+    
+    
+</div>
+
+
+
+        
+   
+
+
+
+

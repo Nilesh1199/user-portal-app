@@ -1,0 +1,36 @@
+h1{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: floralwhite;
+}
+
+.title{
+    background-color: rgb(15, 131, 131);
+    /* background-color: rgb(0,70,139); */
+    height: 20%;
+}
+.table{
+    margin-top: 10px;vertical-align: middle;
+}
+
+.container{
+    margin-top: 80px;
+    font-size: large;
+   
+}
+thead{
+   
+   border-color: teal;
+   background-color: teal;
+   color: white;
+  
+}
+tbody {
+    border-style: solid;
+    border-width: 1px;
+}
+.back
+{
+    background-color: #F6F6F2;
+}
